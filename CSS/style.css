@@ -26,7 +26,7 @@ ul{
     margin: 0 auto;
 }
 footer{
-    background-color: #373738;
+    background-color: #373738;}
     ul{
         padding: center;
         display: inline-block;
@@ -35,4 +35,35 @@ footer{
     li{
         padding: center;
     }
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    width: 33%;
 }
+.myWork{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    div {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      div.a {
+        width: auto;
+        border: 1px solid black;
+      }
+      
+      div.b {
+        width: 150px;
+        border: 1px solid black;
+      }
+      
+      div.c {
+        width: 50%;
+        border: 1px solid black;
+      }
+  }
